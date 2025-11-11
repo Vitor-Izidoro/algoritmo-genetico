@@ -1,12 +1,12 @@
 # Otimização de Seleção de Atributos com Algoritmo Genético
 
-## 🎯 Objetivo
+##  Objetivo
 Aplicar técnicas de computação evolutiva para otimizar a seleção de atributos.  
 O objetivo é melhorar a acurácia do classificador enquanto se reduz a dimensionalidade dos atributos, utilizando uma estratégia baseada em *wrapper* guiada por um Algoritmo Genético (AG).
 
 ---
 
-## 📌 Descrição do Projeto
+##  Descrição do Projeto
 Cada instância do dataset **Breast Cancer** possui **30 atributos**.  
 Os alunos (em grupos de até 4 pessoas) devem implementar um **Algoritmo Genético** para buscar o subconjunto ótimo de atributos que maximize a acurácia do classificador.
 
@@ -23,7 +23,7 @@ Em cada geração do AG:
 - A avaliação será realizada no conjunto de **validação**
 
 Além disso, os resultados obtidos devem ser comparados com o desempenho de:
-- ✅ Classificador utilizando **todos os atributos**
+-  Classificador utilizando **todos os atributos**
 
 ---
 
@@ -51,7 +51,7 @@ Além disso, os resultados obtidos devem ser comparados com o desempenho de:
 ---
 
 ##  Dataset Utilizado
-🔗 Disponível no Scikit-Learn:
+ Disponível no Scikit-Learn:
 ```python
 from sklearn.datasets import load_breast_cancer
 data = load_breast_cancer()

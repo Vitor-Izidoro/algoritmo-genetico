@@ -167,3 +167,23 @@ print(f"Acurácia (todas as features): {all_features_acc:.4f}")
 print(f"Acurácia (GA - conjunto de teste): {test_accuracy:.4f}")
 print(f"Tempo de execução (GA): {ga_execution_time:.2f} segundos")
 print(f"Nº Features Selecionadas: {np.sum(best_individual)}")
+
+import pandas as pd
+
+# Dados para a tabela
+results = {
+    "Feature Selection Method": ["Without Selection", "GA (Genetic Algorithm)"],
+    "# of Features": [30, np.sum(best_individual)],
+    "Accuracy Test Set (%)": [all_features_acc * 100, test_accuracy * 100],
+    "Execution time (s)": [None, ga_execution_time]
+}
+
+# Criar DataFrame
+df = pd.DataFrame(results)
+
+# Salvar como CSV
+df.to_csv("comparative_results.csv", index=False)
+
+# Exibir tabela
+print("\nTabela de Resultados Comparativos:")
+print(df)
